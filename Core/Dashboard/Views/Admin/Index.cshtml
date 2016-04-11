@@ -1,0 +1,41 @@
+﻿@model dynamic
+@using Orchard.Security;
+
+@{ Layout.Title = T("Start").ToString(); }
+
+@if (WorkContext.CurrentUser.UserName == "admin") {
+<section class="dashboard">
+    <div class="dash-item"><a href="http://localhost:55711/Admin/Contents/List">Content <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item"><a href="http://localhost:55711/Admin/Media">Media <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item"><a href="http://localhost:55711/Admin/Widgets">Widgets <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item"><a href="http://localhost:55711/Admin/Navigation">Navigation <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item"><a href="http://localhost:55711/Admin/Workflows">Workflows <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item"><a href="http://localhost:55711/Admin/Modules/Features">Modules <i class="fa fa-angle-right"></i></a></div>
+</section>
+} else if (WorkContext.CurrentUser.UserName == "manager") {
+<section class="dashboard">
+    <div class="dash-item"><a href="~/Admin/Users" title="Manage users">Clients <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item"><a href="~/Admin/Webstation.Module.UserImport" title="Manage bulk users">Import <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item"><a href="~/Admin/I9AOrchard.DocumentGallery" title="Upload files for an user">Files <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item"><a href="~/Users/Account/RequestLostPassword">Passwords <i class="fa fa-angle-right"></i></a></div>
+
+    <div class="dash-item nav"><a href="/">Frontend <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item nav"><a href="/Users/Account/LogOff">Log out <i class="fa fa-angle-right"></i></a></div>
+</section>
+} else if (WorkContext.CurrentUser.UserName == "publisher") {
+<section class="dashboard">
+    <div class="dash-item"><a href="~/Admin/Blogs/52" title="Publish a post in english"><i class="fa fa-shopping-cart"></i> Marketplace <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item"><a href="~/Admin/Blogs/241" title="Publish english news"><i class="fa fa-newspaper-o"></i> News <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item"><a href="~/Admin/Blogs/109" title="Publish a post in spanish"><i class="fa fa-shopping-cart"></i> Mercadillo <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item"><a href="~/Admin/Blogs/242" title="Publish spanish news"><i class="fa fa-newspaper-o"></i> Noticias <i class="fa fa-angle-right"></i></a></div>
+    <div class="dash-item"><a href="~/Admin/Widgets/EditWidget/331?returnUrl=%2FAdmin%2FWidgets%3FlayerId%3D324" title="Publish for all users"><i class="fa fa-exclamation-circle"></i> Global ad <i class="fa fa-angle-right"></i></a></div>
+
+    <div class="dash-item nav"><a href="/">Frontend</a></div>
+    <div class="dash-item nav"><a href="/Users/Account/LogOff">Log out</a></div>
+</section>
+} else {
+<section class="dashboard">
+    <h1>Oh, oh. You are about on break the whole internet thing!</h1>
+    <p>Your best chance is go back a never come again at here</p>
+</section>
+}
