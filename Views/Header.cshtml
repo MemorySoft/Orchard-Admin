@@ -1,0 +1,9 @@
+﻿@using Orchard.Environment.Configuration
+@model dynamic
+           
+@{
+    var urlPrefix = WorkContext.Resolve<ShellSettings>().RequestUrlPrefix;
+    var siteName = WorkContext.CurrentSite.SiteName;
+    var siteLinkText = !string.IsNullOrWhiteSpace(siteName) ? siteName : T("Your app").Text;
+    var appLinkText = !string.IsNullOrWhiteSpace(siteName) ? siteName : T("Memory Panel").Text;
+}

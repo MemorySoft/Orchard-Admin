@@ -1,0 +1,13 @@
+﻿@using Orchard.Security;
+ 
+<div class="brand">
+	@if (WorkContext.CurrentUser.UserName == "admin") {
+	<span class="menu-icon menu-trigger">
+			<i class="fa fa-bars"></i>
+	</span>
+	} else {
+		<a href="~/admin" class="dash-button"><i class="fa fa-angle-left"></i> BACK</a>
+	}
+	<span class="branding">MHC</span>
+	<span id="page-title">@Model.Title.ToString()</span>
+</div>

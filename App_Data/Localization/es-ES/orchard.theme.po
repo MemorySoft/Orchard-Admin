@@ -1,0 +1,137 @@
+# Orchard resource strings - es-ES
+# Copyright (c) 2010 Outercurve Foundation
+# All rights reserved
+# This file is distributed under the BSD license
+
+#: ~/Themes/TheAdmin/Theme.txt
+#| msgid "Name"
+msgctxt "~/Themes/TheAdmin/Theme.txt"
+msgid "The Admin"
+msgstr "El Administrador"
+
+#: ~/Themes/TheAdmin/Theme.txt
+#| msgid "Author"
+msgctxt "~/Themes/TheAdmin/Theme.txt"
+msgid "Jon Wall"
+msgstr "Jon Wall y Harold Giraldo"
+
+#: ~/Themes/TheAdmin/Theme.txt
+#| msgid "Tags"
+msgctxt "~/Themes/TheAdmin/Theme.txt"
+msgid "hidden, admin"
+msgstr "oculto, administrador"
+
+#: ~/Themes/TheAdmin/Theme.txt
+#| msgid "Description"
+msgctxt "~/Themes/TheAdmin/Theme.txt"
+msgid "An admin theme not to be used for the site so don't click "Activate" (or "Uninstall"). In the near future admin themes won't be mixed in with site themes."
+msgstr "Un tema para el administrador, no debe ser utilizado en un sitio, no hacer clic en 'Activar' (o 'Des-instalar'). En un futuro próximo los temas de administrador no serán mezclados con los temas de sitio."
+
+#: ~/Themes/TheAdmin/Theme.txt
+#| msgid "Website"
+msgctxt "~/Themes/TheAdmin/Theme.txt"
+msgid "http://www.orchardproject.net"
+msgstr "http://www.orchardproject.net"
+
+#: ~/Themes/TheAdmin/Views/Header.cshtml
+#| msgid "Project Orchard"
+msgctxt "~/Themes/TheAdmin/Views/Header.cshtml"
+msgid "Project Orchard"
+msgstr "Proyecto Orchard"
+
+#: ~/Themes/TheAdmin/Views/Header.cshtml
+#| msgid "Your Site"
+msgctxt "~/Themes/TheAdmin/Views/Header.cshtml"
+msgid "Your Site"
+msgstr "Su sitio"
+
+#: ~/Themes/TheAdmin/Views/Layout.cshtml
+#| msgid "Skip to navigation"
+msgctxt "~/Themes/TheAdmin/Views/Layout.cshtml"
+msgid "Skip to navigation"
+msgstr "Ir a la navegación"
+
+#: ~/Themes/TheAdmin/Views/OrchardVersion.cshtml
+#| msgid "Orchard v.{0}"
+msgctxt "~/Themes/TheAdmin/Views/OrchardVersion.cshtml"
+msgid "Orchard v.{0}"
+msgstr "Orchard v.{0}"
+
+#: ~/Themes/TheAdmin/Views/Pager.cshtml
+#| msgid ">"
+msgctxt "~/Themes/TheAdmin/Views/Pager.cshtml"
+msgid ">"
+msgstr ">"
+
+#: ~/Themes/TheAdmin/Views/Pager.cshtml
+#| msgid "<"
+msgctxt "~/Themes/TheAdmin/Views/Pager.cshtml"
+msgid "<"
+msgstr "<"
+
+#: ~/Themes/TheAdmin/Views/User.cshtml
+#| msgid "User:"
+msgctxt "~/Themes/TheAdmin/Views/User.cshtml"
+msgid "User:"
+msgstr "Usuario:"
+
+#: ~/Themes/TheAdmin/Views/User.cshtml
+#| msgid "Logout"
+msgctxt "~/Themes/TheAdmin/Views/User.cshtml"
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: ~/Themes/TheAdmin/Views/Pager.cshtml
+#| msgid "Show:"
+msgctxt "~/Themes/TheAdmin/Views/Pager.cshtml"
+msgid "Show:"
+msgstr "Mostrar:"
+
+#: ~/Themes/TheAdmin/Views/Pager.cshtml
+#| msgid "All"
+msgctxt "~/Themes/TheAdmin/Views/Pager.cshtml"
+msgid "All"
+msgstr "Todos"
+
+#: ~/Themes/TheAdmin/Views/Pager.cshtml
+#| msgid "Apply"
+msgctxt "~/Themes/TheAdmin/Views/Pager.cshtml"
+msgid "Apply"
+msgstr "Aplicar"
+
+#: ~/Themes/TheAdmin/Views/Pager.cshtml
+#| msgid "Showing items {0} - {1} of {2}"
+msgctxt "~/Themes/TheAdmin/Views/Pager.cshtml"
+msgid "Showing items {0} - {1} of {2}"
+msgstr "Mostrando elementos {0} - {1} of {2}"
+
+#: ~/Themes/TheAdmin/Views/Pager.cshtml
+#| msgid "<<"
+msgctxt "~/Themes/TheAdmin/Views/Pager.cshtml"
+msgid "<<"
+msgstr "<<"
+
+#: ~/Themes/TheAdmin/Views/Pager.cshtml
+#| msgid ">>"
+msgctxt "~/Themes/TheAdmin/Views/Pager.cshtml"
+msgid ">>"
+msgstr ">>"
+
+#: ~/Themes/TheAdmin/Views/ErrorPage.cshtml
+#| msgid "Oops. Something went wrong ... sorry"
+msgctxt "~/Themes/TheAdmin/Views/ErrorPage.cshtml"
+msgid "Oops. Something went wrong ... sorry"
+msgstr "Oops. Algo salió mal... disculpas"
+
+#: ~/Themes/TheAdmin/Views/ErrorPage.cshtml
+#| msgid "An unhandled exception has occurred and the request was terminated. Please refresh the page. If the error persists, go back"
+msgctxt "~/Themes/TheAdmin/Views/ErrorPage.cshtml"
+msgid "An unhandled exception has occurred and the request was terminated. Please refresh the page. If the error persists, go back"
+msgstr "Ha ocurrido una excepción no manejada y la petición fue terminada. Por favor actualice la página. Si el error persiste vuelva hacia atrás."
+
+#: ~/Themes/TheAdmin/Views/Layout.cshtml
+#| msgid "Are you sure you want to remove this element ?"
+msgctxt "~/Themes/TheAdmin/Views/Layout.cshtml"
+msgid "Are you sure you want to remove this element ?"
+msgstr "¿Está seguro que quiere eliminar este elemento?"
+

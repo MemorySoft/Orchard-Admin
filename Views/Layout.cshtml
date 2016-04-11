@@ -1,0 +1,140 @@
+﻿@model dynamic
+@using Orchard.Security;
+@using Orchard.DisplayManagement.Descriptors;
+@using Orchard.UI.Resources;
+@using Orchard;
+@using Orchard.ContentManagement;
+
+@{
+    SetMeta("X-UA-Compatible", "IE=edge,chrome=1");
+    Style.Include("foundation.css");
+    Style.Include("site.css");
+    Style.Include("ie.css").UseCondition("gte IE 9").SetAttribute("media", "screen, projection");
+    Style.Include("ie8.css").UseCondition("IE 8").SetAttribute("media", "screen, projection");
+    Style.Include("ie7.css").UseCondition("lte IE 7").SetAttribute("media", "screen, projection");
+    Style.Include("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+    Script.Require("jQuery");
+    Script.Require("ShapesBase");
+    Script.Include("admin.js");
+
+    /* Some useful shortcuts or settings
+    ***************************************************************/
+
+    Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
+
+    /* Inserting some ad hoc shapes
+    ***************************************************************/
+
+    // these are just hacked together to fire existing partials... can change
+    Model.Header.Add(Display.Header());
+
+    Model.Header.Add(Display.User(CurrentUser: WorkContext.CurrentUser));
+    Model.Footer.Add(Display.OrchardVersion());
+
+    if (Model.Title != null) {
+        Model.Header.Add(Display.Title(Title: Model.Title));
+    }
+}
+
+@using System.Web.Mvc;
+
+<div id="layout-content">
+
+    @if (Model.Header != null) {
+    <div id="header" role="banner">
+        <div class="row">
+            <div class="medium-12 columns">
+                @Zone(Model.Header)
+            </div>
+        </div>
+        
+    </div>
+    }
+
+    @if (Model.Navigation != null && WorkContext.CurrentUser.UserName == "admin") { 
+    <div id="menu" class="oculta">
+        @Zone(Model.Navigation)
+    </div>
+    } 
+
+    <div id="navshortcut">
+        <a href="#Menu-admin">
+            @T("Skip to navigation")
+        </a>
+    </div>
+
+    <div id="layout-main" class="row">
+        @if (Model.Messages != null) {
+        <div id="messages">
+            @Zone(Model.Messages)
+        </div>
+        }
+        <div id="main" role="main" class="small-12 columns">
+            @if (Model.BeforeContent != null) {
+            <div id="before-content">
+                @Zone(Model.BeforeContent)
+            </div>
+            }
+
+            @if (Model.LocalNavigation != null) {
+            <div id="local-navigation">
+                @Zone(Model.LocalNavigation)
+            </div>
+            }
+
+            @if (Model.Content != null) {
+            <div id="content" class="group">
+                @Zone(Model.Content)
+            </div>
+            }
+
+            @if (Model.AfterContent != null) {
+            <div id="after-content">
+                @Zone(Model.AfterContent)
+            </div>
+            }
+        </div>
+    </div>
+</div>
+
+@if (Model.Footer != null) {
+<div id="footer" role="contentinfo">
+    @Zone(Model.Footer)
+</div>
+}
+
+@using (Script.Foot()) {
+<script type="text/javascript">
+//<![CDATA[
+    var confirmRemoveMessage = '@T("Are you sure you want to remove this element?")';
+
+    // Animamos el menú lateral, que está un poco depre.
+    $('.menu-trigger').click(function(event) {
+        event.stopPropagation();
+        $('#menu').animate({
+            width: 'toggle', 
+            opacity: "toggle"
+        });
+        $(document).click(function() {
+            $('#menu').hide();
+        });
+    });
+
+    $(document).ready(function () {
+        // Escondemos ciertos controles de edición de widgets 
+        // a los roles por debajo de admin. Por si aca.
+        var userName = $('#login .userName').text();
+        var editWidget = $('.edit-widget').length;
+        var campos = $('.edit-widget .primary fieldset');
+        var editor = $('.edit-widget .primary fieldset').last();
+
+        if (userName !== 'admin') {
+            if (editWidget) {
+                campos.hide();
+                editor.show();
+            }
+        }
+    });
+//]]>
+</script>
+}

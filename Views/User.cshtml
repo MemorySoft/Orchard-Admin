@@ -1,0 +1,19 @@
+﻿@model dynamic
+
+@{
+  // Recogemos el nombre del usuario actual  
+  var userName = WorkContext.CurrentUser.UserName;  
+  // Creamos las rutas del usuario para el módulo Profile 
+  var userProfile = "Profile/" + @userName;
+}
+
+@if (Model.CurrentUser != null) 
+{
+    <div id="login"> 
+        <span class="userName">Hello <strong>@userName</strong></span>
+        @if (WorkContext.CurrentUser.UserName == "admin") { 
+            <a class="button btn-plain" href="/">BACK TO FRONTEND</a>
+            <a class="button btn-plain" href="/Users/Account/LogOff">LOG OUT</a>
+        }
+    </div>
+}

@@ -1,0 +1,1614 @@
+﻿/*
+Theme: Theme Admin Responsivized
+Author: Memory Soft Team – http://memorysoft.net
+Copyright: 2010, Orchard. All Rights Reserved
+*/
+
+
+/* Reset
+***************************************************************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, 
+strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td, button, submit {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+:focus {
+    outline: 0;
+}
+
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+header, footer, aside, nav, article {
+    display: block;
+}
+
+#shape-tracing-container {
+    display: none;
+}
+
+.group:after,
+.zone-content:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Globals 
+***************************************************************/
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    color: #333;
+}
+
+body {
+    font-size: 81.3%;
+    color: #333;
+    background: #fff;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+    line-height: 1.6em;
+    margin: 0 auto;
+    min-width: 74em;
+    /* 946px */
+    padding: 0;
+}
+
+/* Headings */
+h1 {
+    font-size: 1.769em;
+}
+h2 {
+    font-size: 1.308em;
+}
+h3 {
+    font-size: 1.231em;
+}
+h4 {
+    font-size: 1.154em;
+}
+h5 {
+    font-size: 1.077em;
+}
+h6 {
+    font-size: 1em;
+}
+h1, h2, h3, h4, h5, legend {
+    padding: .6px 0;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+    margin: 0;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.smallText {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    color: #e4e5e6;
+    background-color: #e4e5e6;
+}
+
+#header,
+#footer {
+    width: 100%;
+}
+
+#header {
+    overflow: hidden;
+}
+
+#layout-content {
+    background: #fff;
+    min-height: 100%;
+}
+
+#layout-main {
+    
+}
+
+#main {
+    
+}
+
+.wrapper,
+.sections {
+    overflow: hidden;
+}
+
+#footer {
+    clear: both;
+    height: 70px;
+    margin-top: -70px;
+}
+
+/* Foundation */
+.columns, .column {
+    margin-bottom: 2rem;
+}
+.panel {
+    border: 1px solid #ccc;
+    padding: 25px 30px;
+    margin-bottom: 2rem;
+}
+
+/* Links
+***************************************************************/
+
+a,
+a:link,
+a:visited {
+    color: #218A52;
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #218A52;
+    text-decoration: none;
+}
+
+/* Lists
+***************************************************************/
+
+ol.decimal {
+    list-style: decimal inside;
+    margin: 12px 0;
+}
+
+ul.disc {
+    list-style: disc inside;
+    margin: 12px 0;
+}
+
+
+/* Header - Branding and Login  
+***************************************************************/
+
+.zone-header {
+    overflow: hidden;
+}
+
+#header {
+    height: 64px;
+    margin: 0;
+    background: #333;
+}
+
+.brand {
+    background: transparent;
+    width: 350px;
+    margin: 18px 0;
+    float: left;
+}
+.branding {
+    color: #FFFFFF;
+    font-size: 1.769em;
+    font-weight: 800;
+    padding: 18px 0 0 0px;
+}
+.menu-icon {
+    margin: 14px;
+    font-size: 1.7em;
+    color: #6c9;
+    cursor: pointer;
+    width: 40px;
+}
+#page-title {
+    color: #fff;
+    padding: 18px 0 0 0px;
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+#login {
+    display: block;
+    float: right;
+    margin-top: 18px;
+    white-space: nowrap;
+}
+#login a {
+    color: #fff;
+    margin: 0;
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 1px solid #fff;
+}
+#login a:hover {
+    color: #6c9;
+}
+#login a i {
+    margin-right: .5em;
+}
+#login .userName {
+    /*margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #fff;*/
+    font-size: 1.2em;
+    color: #fff;
+
+}
+
+
+
+/* Navigation
+***************************************************************/
+
+#navshortcut {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+
+#menu {
+    background: #333;
+    box-shadow: 0 0 1px #fff;
+    display: inline;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 999999;
+}
+
+#menu.oculta {
+    display: none;
+}
+
+#menu .menu-manager {
+    height: 100%;
+    margin-top: 20px;
+}
+
+#menu .menu-admin li {
+    margin: 0 16px 8px 16px;
+}
+
+#menu .menu-admin ul li {
+    border: 0;
+    margin: 0 10px 0 10px;
+}
+
+#menu .expando-glyph-container .expando-glyph {
+    background: transparent no-repeat 0 -19px;
+    background-image: url(images/menu-glyph.png);
+    left: 160px;
+}
+
+#menu .expando-glyph-container .expando-glyph:hover {
+    background-image: url(images/menu-glyph.png);
+}
+
+#menu .expando-glyph-container.closed .expando-glyph {
+    background-image: url(images/menu-glyph.png);
+    background-position: 0 3px;
+}
+
+#menu .expando-glyph-container.closed .expando-glyph:hover {
+    background-image: url(images/menu-glyph.png);
+}
+
+#menu .expando-glyph-container.closing .expando-glyph {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-transform: rotate(-90deg) translate(3px, -3px);
+    -moz-transform: rotate(-90deg) translate(3px, -3px);
+    transform: rotate(-90deg) translate(3px, -3px);
+}
+
+#menu .expando-glyph-container.opening .expando-glyph {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-transform: rotate(90deg) translate(3px, 3px);
+    -moz-transform: rotate(90deg) translate(3px, 3px);
+    transform: rotate(90deg) translate(3px, 3px);
+}
+
+#menu .menu-admin li h3 {
+    font-size: 14px;
+    padding: 0 0 0 10px;
+}
+
+#menu .menu-admin a,
+#menu .menu-admin span {
+    background-position: 0 2px;
+    background-repeat: no-repeat;
+}
+
+#menu .menu-admin li h3 a,
+#menu .menu-admin li h3 span {
+    /* only the h3 gets an icon by default */
+    background-image: none !important;
+}
+
+#menu .menu-admin a:hover,
+#menu .menu-admin .selected a,
+#menu .menu-admin .selected h3 span {
+    color: #6c9;
+}
+
+#menu .menu-admin a:hover,
+#menu .menu-admin .selected a {
+    background-position: 0 -30px;
+}
+
+#menu .menu-admin li h3 a,
+#menu .menu-admin li h3 span {
+    line-height: 16px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+#menu .menu-admin ul a,
+#menu .menu-admin ul a:link,
+#menu .menu-admin ul a:visited {
+    color: #FFF;
+    display: block;
+    line-height: 1.2em;
+    padding: 4px 0 4px 20px;
+    text-decoration: none;
+}
+
+#menu .menu-admin ul a:hover,
+#menu .menu-admin ul a:active,
+#menu .menu-admin ul a:focus,
+#menu .menu-admin ul .selected a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#menu .menu-admin ul a:hover,
+#menu .menu-admin ul a:active {
+    background-color: transparent;
+}
+
+#menu .menu-admin .section-new .navicon-new {
+    background-image: none !important;
+    padding: 0;
+}
+
+ul.menuItems {
+    margin: 6px 0 0 0;
+}
+
+.menu-admin {
+    display: block;
+}
+
+
+/******Tabs******/
+
+#local-navigation {
+    height: 54px;
+    margin: 10px 0 40px 0;
+}
+
+.localmenu li {
+    display: inline;
+    font-size: 15px;
+    line-height: 32px;
+    z-index: 10;
+    position: relative;
+    margin: 0px 1px 0 0;
+    padding: 8px 18px 7px 18px;
+    background: #218A52;
+}
+
+.localmenu li.first {
+    margin-left: 16px;
+}
+
+.localmenu li.selected {
+    background-color: #fff;
+}
+
+.localmenu li:hover {
+    background-color: #fff;
+}
+
+.localmenu li a {
+    color: #fff;
+}
+
+.localmenu li.selected a,
+.localmenu li:hover a {
+    background-color: #fff;
+    color: #218A52;
+}
+
+#content {
+    background-color: #fff;
+    margin: 10px 0 0 0;
+    clear: both;
+}
+
+.section-dashboard,
+.section-new {
+    border: 1px solid #FFF;
+    padding: 6px 0;
+}
+
+.section-closer {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FFF;
+    text-align: right;
+    padding: 10px 0;
+    margin-top: 0;
+}
+
+.section-dashboard h3,
+.section-new h3,
+.section-dashboard ul,
+.section-new ul {
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.expando-glyph-container {
+    display: inline !important;
+    line-height: .9em;
+    padding: 0 !important;
+    position: relative;
+}
+
+.expando-glyph {
+    background: #fcfcfc no-repeat center center;
+    background-image: url(data:image/gif;base64,R0lGODlhCwALAKIFAPDz2/b70mhpREJEPjI0Lf///wAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjJDNDlGNjgyMjg5NERGMTE4RUZGQkY0Q0JCRDA3OTc2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQzQjUyNTNFOTQyODExREY5MDkxQ0U0MzJGRTdGNEExIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQzQjUyNTNEOTQyODExREY5MDkxQ0U0MzJGRTdGNEExIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJENDlGNjgyMjg5NERGMTE4RUZGQkY0Q0JCRDA3OTc2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJDNDlGNjgyMjg5NERGMTE4RUZGQkY0Q0JCRDA3OTc2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAQAABQAsAAAAAAsACwAAAx1YutxeIbYIghBgWVwA4daQKZ4QjkspPsD6dG8sJwA7);
+    /*url("images/menuOpen.gif")*/
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    height: 17px;
+    left: -20px;
+    padding: 0 !important;
+    position: absolute;
+    width: 17px;
+    -webkit-transform: rotate(0deg);
+}
+
+.expando-glyph:hover {
+    background-image: url(data:image/gif;base64,R0lGODlhCwALAJEDAB5dfcbVyMvbwf///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjJDNDlGNjgyMjg5NERGMTE4RUZGQkY0Q0JCRDA3OTc2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkUxMUUzODE2OTQyODExREZBN0ZBOURGNEI3NDVDRkMxIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkUxMUUzODE1OTQyODExREZBN0ZBOURGNEI3NDVDRkMxIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJENDlGNjgyMjg5NERGMTE4RUZGQkY0Q0JCRDA3OTc2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJDNDlGNjgyMjg5NERGMTE4RUZGQkY0Q0JCRDA3OTc2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAQAAAwAsAAAAAAsACwAAAhqcj6kjnR0EAOFIOsKstxoNdAmIKZq3oMvKFgA7);
+    /*url("images/menuOpenHover.gif");*/
+}
+
+.expando-glyph-container.closed .expando-glyph {
+    background-image: url(data:image/gif;base64,R0lGODlhCwALAKIFAPDz2/b70mhpREJEPjI0Lf///wAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjJDNDlGNjgyMjg5NERGMTE4RUZGQkY0Q0JCRDA3OTc2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkY2OEJCRkEyOTQyODExREY5ODMwQkQwQjI2MEMzREUwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkY2OEJCRkExOTQyODExREY5ODMwQkQwQjI2MEMzREUwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJENDlGNjgyMjg5NERGMTE4RUZGQkY0Q0JCRDA3OTc2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJDNDlGNjgyMjg5NERGMTE4RUZGQkY0Q0JCRDA3OTc2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAQAABQAsAAAAAAsACwAAAx1YBaD+QbTn4pi0WEx3Vh4FCASnjGUWpar0acGXAAA7);
+    /*url("images/menuClosed.gif");*/
+}
+
+.expando-glyph-container.closed .expando-glyph:hover {
+    background-image: url(data:image/gif;base64,R0lGODlhCwALAJEDAB5dfcbVyMvbwf///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjJDNDlGNjgyMjg5NERGMTE4RUZGQkY0Q0JCRDA3OTc2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjA1NTdBNkZFOTQyOTExREY4QjNERjI1RjMzMUYxRjk1IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjA1NTdBNkZEOTQyOTExREY4QjNERjI1RjMzMUYxRjk1IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJENDlGNjgyMjg5NERGMTE4RUZGQkY0Q0JCRDA3OTc2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJDNDlGNjgyMjg5NERGMTE4RUZGQkY0Q0JCRDA3OTc2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAQAAAwAsAAAAAAsACwAAAhrcEqYrkKuagxFMOuSjmga7Kd/FgFgTMgJWAAA7);
+    /*url("images/menuClosedHover.gif");*/
+}
+
+.expando-glyph-container.closing .expando-glyph {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.expando-glyph-container.opening .expando-glyph {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+/* Content
+***************************************************************/
+
+#main #content h1 {
+    margin: 0 0 1em;
+}
+
+#main h2,
+#main h3 {
+    margin: .5em 0;
+}
+
+#main .main.actions {
+    margin: 0 0 1.4em;
+}
+
+#main .meta {
+    margin: -.4em 0 .4em;
+}
+
+#main form.inline {
+    margin: 0;
+}
+
+#main ul h2 {
+    border-bottom: 0;
+    margin: .2em 0;
+}
+
+#main ul h3 {
+    margin: 0 0 .2em;
+}
+
+
+/* Confirmations, Messages and the like
+***************************************************************/
+
+.message,
+.validation-summary-errors {
+    margin: 10px 0 4px 0;
+    padding: 4px;
+    clear: both;
+}
+
+messages div.message {
+    clear: both;
+}
+
+span.message {
+    display: block;
+    margin: 4px 0 4px 4px;
+}
+
+.messages a {
+    font-weight: bold;
+}
+
+.critical.message,
+.validation-summary-errors,
+.input-validation-error.text-box,
+.input-validation-error.text {
+    border: 1px solid #990808;
+}
+
+.critical.message,
+.validation-summary-errors {
+    background: #e68585;
+    /* red */
+    color: #fff;
+}
+
+.info {
+    background: url(images/info.gif) no-repeat 5px 5px #fff;
+    border: 1px solid #e4e8ee;
+    /* blue */
+    padding-left: 26px;
+}
+
+.message-Information,
+.notifications {
+    background: #e6f1c9;
+    /* green */
+    border: 1px solid #cfe493;
+    color: #062232;
+}
+
+.message-Warning {
+    background: #fdf5bc;
+    /* yellow */
+    border: 1px solid #ffea9b;
+}
+
+.message-Error {
+    background: #e68585;
+    /* red */
+    border: 1px solid #990808;
+    color: #fff;
+}
+
+.debug.message {
+    background: #eee;
+    border: 1px dashed #D2D6C6;
+    color: #7a7a7a;
+    margin: 20px 0 14px 0;
+}
+
+.debug.message:before {
+    content: "DEBUG » ";
+}
+
+
+/* Forms
+***************************************************************/
+
+form {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+}
+
+legend {
+    font-size: 1.231em;
+    font-weight: normal;
+    border: none;
+}
+
+fieldset {
+    padding: 6px 0 0;
+    margin: 0 0 12px 0;
+    border: 0px solid #dbdbdb;
+}
+
+label {
+    font-weight: normal;
+    display: block;
+    margin-top: 1rem;
+}
+
+label.forcheckbox {
+    margin: 0 0 0 .4em;
+    display: inline;
+}
+
+label.required:after {
+    margin-left: 1ex;
+    content: "*";
+    color: red;
+}
+
+input {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+}
+
+legend.required:after {
+    margin-left: 1ex;
+    content: "*";
+    color: red;
+}
+
+form.inline,
+form.inline fieldset {
+    /* todo: (heskew) need something other than .inline ... */
+    display: inline;
+}
+
+form.inline fieldset {
+    margin: 0;
+}
+
+.bulk-actions {
+    display: inline;
+    height: auto;
+    margin: 0 4px 0 0;
+    padding: 0;
+    width: auto;
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+    outline: 1px dotted #666d51;
+}
+
+input[readonly] {
+    background-color: #EBEBE4;
+    color: #545454;
+}
+
+legend span {
+    font-weight: normal;
+}
+
+.bulk-actions label,
+.bulk-items h3,
+label.sub {
+    display: inline;
+}
+
+label.bulk-order {
+    text-transform: lowercase;
+}
+
+label span {
+    font-weight: normal;
+}
+
+label input {
+    vertical-align: text-top;
+}
+
+.hint {
+    display: block;
+    font-size: 0.923em;
+    color: #7c7c7c;
+}
+
+select,
+textarea,
+input.text,
+input.textMedium,
+input.text-medium,
+input.text-small,
+input.text-box {
+    font-family: inherit;
+    border: 1px solid #bdbcbc;
+    font-size: inherit;
+}
+
+input.text,
+input.textMedium,
+input.text-medium,
+input.text-box {
+    line-height: 1.2em;
+}
+
+input.text-small,
+input.text.small {
+    width: 4em;
+}
+
+input.textMedium,
+input.text-medium,
+input.text.medium {
+    width: 26em;
+}
+
+select {
+    padding: 1px;
+}
+
+select:focus,
+textarea:focus,
+input.text:focus,
+input.text-box:focus,
+input.text-small:focus,
+input.textMedium:focus,
+input.text-medium:focus {
+    border-color: #666d51;
+}
+
+input.check-box,
+input[type=checkbox] {
+    margin-left: 0;
+    vertical-align: -.1em;
+}
+
+input.large.text,
+textarea,
+fieldset {
+    clear: both;
+}
+
+textarea {
+    min-height: 8em;
+}
+
+#main input.large.text {
+    width: 99%;
+}
+
+#Content {
+    word-break: break-all;
+}
+
+#main .primary input.large.text,
+#main .primary textarea {
+    margin: 0;
+    width: 98.8%;
+}
+
+.primary .mceEditor {
+    display: block;
+    margin: 0;
+}
+
+/*----buttons----*/
+
+button,
+.button,
+a.button {
+    background: #218A52;
+    color: #fff;
+    border: 1px solid #218A52;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+    font-size: .8rem;
+    font-weight: 300;
+    padding: 0.75em 1.5em;
+    margin-right: .5rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover,
+.button:hover {
+    background: transparent;
+    border: 1px solid #218A52;
+    color: #218A52;
+}
+button:active,
+.buton:active {
+    background: #218A52;
+    border: 1px solid #218A52;
+    color: #fff;
+}
+
+.btn-back,
+a.btn-back {
+    float: right;
+    background: #333;
+    border: 1px solid #333;
+    color: #fff;
+}
+.btn-back:hover,
+a.btn-back:hover {
+    background: transparent;
+    border: 1px solid #333;
+    color: #333;
+}
+
+.btn-caution,
+a.btn-caution {
+    background: #FD8C00;
+    border: 1px solid #FD8C00;
+    color: #fff;
+}
+.btn-caution:hover,
+a.btn-caution:hover {
+    background: transparent;
+    border: 1px solid #FD8C00;
+    color: #FD8C00;
+}
+
+.btn-plain,
+a.btn-plain {
+    background: transparent;
+    border: 1px solid transparent;
+    color: #fff;
+}
+a.button.btn-plain {
+    padding: 0;
+}
+.btn-plain:hover,
+a.btn-plain:hover {
+    background: transparent;
+    border: 1px solid transparent;
+    color: #6c9;
+}
+
+.btn-plain--light,
+a.btn-plain--light {
+    background: transparent;
+    border: 1px solid transparent;
+    color: #218A52;
+    font-weight: 400;
+    padding: .5rem .5rem .5rem 0;
+}
+.btn-plain--light:hover,
+a.btn-plain--light:hover {
+    background: transparent;
+    border: 1px solid transparent;
+    color: #333;
+}
+
+.btn-grey,
+a.btn-grey {
+    background: #f5f5f5;
+    color: #ffffff;
+}
+
+form.link button,
+button.link,
+button.link:hover {
+    color: #218A52;
+    text-decoration: none;
+}
+form.link button:hover,
+button.link:hover {
+    border-bottom: 1px solid #218A52;
+}
+form.link button,
+button.link {
+    height: 1.3em;
+}
+
+/* and allow all of that button style to be undone and beyond - to look like a link */
+
+button.link {
+    background: none;
+    border: 0;
+    padding: inherit;
+    text-shadow: none;
+}
+
+.cancel {
+    margin: 0 0 0 .93em;
+}
+
+.manage {
+    margin-bottom: 16px;
+    display: block;
+    overflow: hidden;
+}
+
+.actions {
+    clear: right;
+    padding: 0;
+    text-align: right;
+}
+
+.item-properties.actions {
+    margin: -10px 0 10px 0;
+}
+
+.contentItems .actions li {
+    background: inherit;
+    border: 0;
+    padding: 0;
+}
+
+.actions .construct {
+    float: left;
+}
+
+.actions .destruct {
+    float: right;
+}
+
+.manage a.button {
+    float: right;
+    /*height: inherit;
+    margin-left: 4px;*/
+}
+
+.options {
+    margin: 12px 0px 12px 0px;
+}
+
+.options span {
+    display: block;
+    margin: 12px 0 0 0;
+}
+
+.options span.hint {
+    display: block;
+    margin: 0 0 0 0;
+}
+
+.options input[type="text"] {
+    width: 26em;
+}
+
+
+/* (Items) Tables
+***************************************************************/
+
+table.items {
+    margin: 0 0 1.4em 0;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-bottom: none;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table.items caption {
+    padding: 8px 0;
+    text-indent: 0;
+}
+
+table.items col {
+    border-spacing: 0;
+    display: table-column;
+}
+
+table.items colgroup {
+    border-spacing: 0;
+    display: table-column-group;
+}
+
+table.items tbody {
+    border-spacing: 0;
+    vertical-align: middle;
+}
+
+table.items thead,
+table.items th {
+    background: #f5f5f5;
+    overflow: hidden;
+    text-align: left;
+    white-space: nowrap;
+}
+
+table.items th.actions {
+    width: 300px;
+    text-align: right;
+}
+
+table.items th.checkbox {
+    width: 50px;
+}
+
+
+/* todo: (heskew) hook back up */
+
+table.items tr.hover {
+    background-color: #f0f3d6;
+}
+
+table.items tr.critical {
+    background: #e68585;
+    border: inherit;
+}
+
+table.items tr.warning {
+    background: #fdf5bc;
+    border: inherit;
+}
+
+table.items th,
+table.items td {
+    border-bottom: 1px solid #eaeaea;
+    border-spacing: 0px;
+    display: table-cell;
+    padding: 8px 12px;
+}
+
+table.items td .add {
+    float: right;
+}
+
+table.items tr.internal * {
+    background-color: #eee;
+    color: grey;
+}
+
+
+/* Content item lists
+----------------------------------------------------------*/
+
+.contentItems {
+    border: 1px solid #eaeaea;
+    border-bottom: none;
+    background: #FFF;
+    clear: both;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.contentItems li {
+    margin: 0;
+    overflow: hidden;
+    padding: 0 1.4em .8em;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.contentItems.bulk-items li {
+    padding-bottom: .6em;
+    padding-left: .6em;
+}
+
+#main .contentItems li .actions {
+    color: #EAE9D9;
+    height: auto;
+    margin: -1.3em 0 0;
+    padding: 0 0 .1em;
+}
+
+#main .contentItems li .actions .ibutton {
+    margin-right: 6px;
+}
+
+#main .contentItems li .actions .destruct .ibutton {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+#main .contentItems li:hover .ibutton {
+    background-position: 0 0;
+}
+
+#main .contentItems li:hover .ibutton.remove {
+    background-position: -20px 0;
+}
+
+#main .contentItems li:hover .ibutton.view {
+    background-position: -40px 0;
+}
+
+#main .contentItems li:hover .ibutton.add.page {
+    background-position: -60px 0;
+}
+
+#main .contentItems li:hover .ibutton.edit {
+    background-position: -80px 0;
+}
+
+#main .contentItems li:hover .ibutton.publish {
+    background-position: -100px 0;
+}
+
+#main .contentItems li:hover .ibutton.blog {
+    background-position: -120px 0;
+}
+
+.contentItems .summary {
+    clear: both;
+    padding: 1.2em .4em .5em;
+}
+
+.contentItems .properties {
+    float: left;
+}
+
+.contentItems .properties .contentType {
+    display: inline;
+    color: #333;
+}
+
+.contentItems h3 {
+    padding-top: 0;
+}
+
+.contentItems .metadata ul {
+    display: inline;
+}
+
+.contentItems.bulk-items .metadata,
+.contentItems.bulk-items .primary {
+    margin: .7em 0 .7em 2em;
+    overflow: auto;
+}
+
+.contentItems.bulk-items .primary {
+    clear: both;
+    margin-top: 0;
+}
+
+.contentItems .properties li {
+    border: 0;
+    float: left;
+    padding: 0 0 .1em 0;
+}
+
+.contentItems .properties .icon {
+    margin: 0 .2em -.2em;
+}
+
+.contentItems .related {
+    text-align: right;
+}
+
+.contentItems .comment-count {
+    line-height: 2em;
+}
+
+
+/* Alternating styles */
+
+#main .contentItems > ul > li:nth-child(odd),
+ul.contentItems > li:nth-child(odd),
+table.items tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#main .contentItems > ul > li:nth-child(even),
+ul.contentItems > li:nth-child(even),
+table.items tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#main .contentItems > ul > li:hover,
+ul.contentItems > li:hover,
+table.items tr:hover {
+    background-color: #EDF9F5;
+}
+
+
+/* Pager
+***************************************************************/
+
+.pager-footer {}
+
+.page-size-options {
+    float: left;
+    padding-right: 40px;
+    margin-left: auto;
+}
+
+html.dyn #submit-pager,
+html.dyn .apply-bulk-actions-auto {
+    display: none;
+}
+
+.pager {
+    list-style: none;
+    padding: 0;
+    margin: 2px 0 0 0;
+    overflow: hidden;
+}
+
+.pager li {
+    float: left;
+    padding: 0 0 0 0;
+    margin: 0 6px 0 0;
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pager a,
+.pager span {
+    font-size: 14px;
+    display: block;
+    background: #fff;
+    padding: 2px 8px;
+}
+
+.pager a:hover {
+    background-color: #eaeaea;
+    color: #333;
+}
+
+.pager span {
+    background-color: inherit;
+}
+
+
+/* Core Modules
+***************************************************************/
+
+/* Routable */
+
+.permalink input.text {
+    background: transparent;
+    border-color: #EAE9D9;
+    border-style: dashed;
+    margin-left: 0;
+    margin-right: 2em;
+    width: 350px;
+}
+.permalink input.text:focus {
+    background: #FFF;
+    border-color: #666d51;
+    border-style: solid;
+}
+
+/* Routable and Containers (Core) */
+
+.with-checkbox .checkbox-and-label {
+    /* todo: (heskew) routable should be changed to use this too */
+    margin-left: 10px;
+}
+.checkbox-and-label {
+    white-space: nowrap;
+}
+
+/* Settings and Import/Export */
+
+.orchard-media fieldset div,
+.settings fieldset div,
+.settings .button,
+.orchard-importexport fieldset div {
+    margin: .5em 0;
+}
+.settings legend {
+    margin: 0 0 0 0;
+    font-size: 18px;
+}
+
+/* Core Contents and Orchard.PublishLater */
+
+.edit-item-sidebar fieldset {
+    margin: 0;
+    padding: 0;
+}
+fieldset.publish-button,
+fieldset.delete-button,
+fieldset.save-button {
+    clear: none;
+    float: left;
+}
+fieldset.save-button {
+    clear: left;
+}
+fieldset.publish-button {
+    margin: 0 12px 0 0;
+    padding: 0 12px;
+    border-right: 1px solid #ccc;
+}
+fieldset.delete-button {
+    margin: 0 0 0 12px;
+}
+
+/* Dashboard */
+
+.dashboard {
+    display: block;
+    min-width: 100%;
+    overflow: hidden;
+}
+.dashboard .dash-item {
+    width: 100%;
+    float: left;
+}
+.dashboard .dash-item a {
+    margin: 10px;
+    padding: 25px;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 300 !important;
+    background: #218A52;
+    color: #fff;
+    border: 1px solid #218A52;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+}
+.dashboard .dash-item a:hover {
+    background: #6c9;
+    border: 1px solid #6c9;
+    color: #fff;
+}
+.dashboard .dash-item a i {
+    float: right;
+}
+
+.dashboard .dash-item.nav {
+    width: 50%;
+}
+.dashboard .dash-item.nav a {
+    background: #666;
+    border: 1px solid #666;
+    color: #fff;
+}
+.dashboard .dash-item.nav a:hover {
+    background: #999;
+    border: 1px solid #999;
+    color: #fff;
+}
+
+a.dash-button {
+    margin: 10px 20px 0 0;
+    font-size: 1.7em;
+    color: #6c9;
+}
+a.dash-button:hover {
+    color: #fff;
+}
+
+
+/* Fields
+***************************************************************/
+
+/* TextField */
+
+#main .summary p.text-field {
+    margin: .5em 0;
+}
+
+/* ---------- Generic ---------- */
+
+/* todo: needed? */
+
+.clearBoth {
+    clear: both;
+}
+
+.placeholderd {
+    color: #ccc;
+    font-style: italic;
+}
+
+#orchard-version {
+    display: none;
+}
+
+/* Resets 
+***************************************************************/
+
+/* Ocultamos el acceso a la administración de Roles; solo admin debe tocarlo */
+.localmenu .local-section-roles {
+    display: none;
+}
+
+/* Los permalinks también los ocultamos, miedo me dan... */
+.permalink {
+    display: none;
+}
+
+/* También nos cargamos el checkbox de 'Set as home page' o la van a liar */
+#Autoroute_PromoteToHomePage,
+label[for="Autoroute_PromoteToHomePage"],
+.hint:last-child {
+    display: none;
+}
+
+a.button.confirmLink {
+    background: #FD8C00;
+}
+
+.doc-preview {
+    position: relative;
+}
+.doc-preview img {
+    max-width: 100%;
+}
+.doc-preview img:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    height: calc(100% + 5px);
+    width: calc(100% + 2px);
+    background: #efefef;
+    border: 1px solid #ddd;
+    color: #efefef; 
+}
+.doc-preview img:after {
+    content: "Preview for this document is not available";
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    font-size: 1.1em;
+    color: #999;
+    margin-bottom: 10px
+}
+select {
+    width: 30%;
+    padding: 5.5px 0px;
+    color: #999;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+.menu-items-zone h2 {
+    font-size: 1.077em;
+    padding: 10px 2px;
+}
+
+.contentItems .properties {
+    width: 60%;
+}
+
+#currentTheme {
+    border: 1px solid #EAEAEA;
+    background: #EDF9F5;
+    overflow: hidden;
+    padding: 40px 60px;
+}
+#currentTheme .themePreviewImage {
+    float: left;
+    margin-right: 40px;
+}
+.details {
+    float: left;
+}
+.details h4 {
+    font-size: 32px;
+    line-height: 46px;
+}
+.details .themeInfo {
+    padding-top: 20px;
+    border-top: 1px solid #CCC;
+    width: 100%;
+    min-width: 500px;
+}
+
+.MultiFile-list {
+    margin-top: 1rem;
+}
+.MultiFile-list:before {
+    content: "Selected files:";
+}
+.MultiFile-label {
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: .5rem;
+    border: 1px solid #ccc;
+}
+.MultiFile-label a {
+    margin-right: .5rem;
+    font-size: 1.2rem;
+}
+
+.features .feature .actions a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #218A52;
+}
+.features .feature .actions a:hover {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ccc;
+}
+.features .enabled.feature {
+    border-color: #218A52 !important;
+    background: #6c9;
+    overflow: hidden;
+}
+.features .enabled.feature label {
+    color: #fff;
+}
+.features .enabled.feature .actions a {
+    color: #fff;
+}
+.features .enabled.feature .actions a:hover {
+    color: #666;
+}
+
